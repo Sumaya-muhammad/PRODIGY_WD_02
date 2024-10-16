@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;  /* Aligns the stopwatch to the left */
+    align-items: center;
+    background: url('bgstop.png') no-repeat right center;  /* Background image on the right */
+    background-size: cover;    /* Ensures the image fits properly */
+    color: #fff;
+}
+
+/* Stopwatch Container */
+.stopwatch-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    margin-left: 50px;  /* To give space from the left */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Stopwatch Title */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+    text-transform: uppercase;
+}
+
+/* Time Display */
+#display {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Button Styling */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #f39c12;
+    transform: scale(1.1);
+}
+
+#start {
+    background-color: #27ae60;
+}
+
+#pause {
+    background-color: #e74c3c;
+}
+
+#reset {
+    background-color: #3498db;
+}
+
+#lap {
+    background-color: #8e44ad;
+}
+
+/* Laps Section */
+#laps {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    color: #f1c40f;
+}
